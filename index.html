@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cartão de Crédito</title>
+</head>
+<body>
+    <form action="">
+         <section id="credit-card">
+            <div class="front"></div>
+            <div class="back"></div>
+         </section>
+         <secion class="inputs flex">
+            <div class="input-wrapper">
+                <label for="cc-number">Número do cartão</label>
+                <input id="cc-number" type="text" placeholder="**** **** **** ****">
+            </div>
+            <div class="input-wrapper">
+                <label for="cc-holder">Nome do titular</label>
+                <input id="cc-holder" type="text" placeholder="Nome como está no cartão" required>
+                <div class="warning">
+                    <img src="https://i.ibb.co/7yY8KYN/warning.png" alt="ícone de alerta">
+                    Nome do titular é obrigatório
+                </div>
+            </div>
+
+            <div class="col-2 flex">
+                <div class="input-wrapper">
+                    <label for="cc-validity">Validade</label>
+                    <input id="cc-validity" type="text" placeholder="mm/aa">
+                </div>
+
+                <div class="input-wrapper">
+                    <label class="flex help" for="cc-cvv">CVV
+                        <img src="https://i.ibb.co/NTZY5qH/question.png" alt="ícone de ajuda" title="Esse número está, geralmente, nas costas do seu cartão">
+                    </label>
+                    <input id="cc-cvv" type="text" placeholder="***">
+                </div>
+            </div>
+         </secion>
+         <section class="info-security flex">
+            <img src="https://i.ibb.co/4FZhFCq/shield-chech.png" alt="ícone de seguranca">
+            Seus dados estão seguros
+         </section>
+         <section>
+            <button>Adicionar cartão</button>
+         </section>
+    </form>
+
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
